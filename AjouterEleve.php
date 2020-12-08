@@ -1,11 +1,11 @@
 <?php
 include "fonction.php";
 menu();
-function Insert($req)
+$maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; charset=utf8','mael', '');
+function Insert($maBase,$req)
 {
     try
     {
-        $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; charset=utf8','mael', '');
         $dataBrute = $maBase->query($req);
         if(!$dataBrute)
         {
@@ -31,7 +31,7 @@ try
             if ((!empty($_POST['Nom']))	&& (!empty($_POST['Prenom'])) && (!empty($_POST['Classe'])))
             {
                 $req ="INSERT INTO `Eleves`( `Nom`, `Prenom`,`Classe`) VALUES('".$_POST['Nom']."','".$_POST['Prenom']."','".$_POST['Classe']."')";
-                Insert($req);
+                Insert($maBase,$req);
             }
         }
     } 
@@ -52,6 +52,15 @@ try
  <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
 	<p>Prénom: <input type="text" name="Prenom" /></p>        
-    <p>Classe: <input type="text" name="Classe" /></p>                
+    <p>Classe: <select name="Classe" >
+               <?php
+               $resultat = $maBase->query('SELECT * FROM `Classe` ');
+               while ($donnees = $resultat->fetch())
+               {
+                   echo '<option value="'.$donnees['NumClasse'].'">'.$donnees['Nom']."".'</option>';
+               }
+               ?>
+               </select>
+    </p>                
 	<p><input type="submit" /></p>        
 </form>
