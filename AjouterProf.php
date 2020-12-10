@@ -28,9 +28,9 @@ try
         
         if(isset($_POST['Nom'])) 
         {
-            if ((!empty($_POST['Nom'])))
+            if ((!empty($_POST['Nom'])) && (!empty($_POST['Prenom'])))
             {
-                $req ="INSERT INTO `Classe`(`Nom`) VALUES('".$_POST['Nom']."')";
+                $req ="INSERT INTO `Prof`(`Nom`,`Prenom`) VALUES('".$_POST['Nom']."','".$_POST['Prenom']."')";
                 Insert($req);
             }
         }
@@ -46,8 +46,9 @@ try
 </head>
 
 <body>
-<p>Entrez les valeurs de la Classe :</p>
+<p>Entrez les valeurs du Professeur :</p>
 <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
+    <p>Prenom: <input type="text" name="Prenom" /></p>
     <p><input type="submit" /></p>        
 </form>

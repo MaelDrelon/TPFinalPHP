@@ -46,9 +46,7 @@ try
 </head>
 
 <body>
-
-
-
+<p>Entrez les valeurs de l'élève :</p>
  <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
 	<p>Prénom: <input type="text" name="Prenom" /></p>        
@@ -57,7 +55,7 @@ try
                $resultat = $maBase->query('SELECT * FROM `Classe` ');
                while ($donnees = $resultat->fetch())
                {
-                   echo '<option value="'.$donnees['NumClasse'].'">'.$donnees['Nom']."".'</option>';
+                   echo '<option>'.$donnees['Nom']."".'</option>';
                }
                ?>
                </select>
