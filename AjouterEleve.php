@@ -41,6 +41,7 @@ try
         die ('Erreur : '.$erreur ->getMessage());
     }
 ?>
+
 <head>
   <link rel="stylesheet" href="index.css">
 </head>
@@ -52,6 +53,7 @@ try
     <p>Nom: <input type="text" name="Nom" /></p>
 	<p>Prénom: <input type="text" name="Prenom" /></p>        
     <p>Classe: <select name="Classe" >
+
                <?php
                $resultat = $maBase->query('SELECT * FROM `Classe` ');
                while ($donnees = $resultat->fetch())
@@ -59,8 +61,8 @@ try
                    echo '<option>'.$donnees['Nom']."".'</option>';
                }
                ?>
-               </select>
-    </p>                
-	<p><input type="submit" value="Envoyer"/></p>        
+
+               </select></p>
+    <p><input type="submit" value="Envoyer"/></p>        
 </form>
 </div>

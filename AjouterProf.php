@@ -41,6 +41,7 @@ try
         die ('Erreur : '.$erreur ->getMessage());
     }
 ?>
+
 <head>
   <link rel="stylesheet" href="index.css">
 </head>

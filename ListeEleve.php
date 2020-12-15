@@ -2,10 +2,12 @@
 include "fonction.php";
 menu();
 ?>
+
 <head>
   <link rel="stylesheet" href="index.css">
 </head>
 <div class=fond>
+
 <?php
 try 
 {
@@ -14,12 +16,14 @@ try
   while ($donnees = $reponse->fetch())
 {        
 ?>
+
 <body>
 <div class=conteneur>
     <p>Nom de l'élève: <?php echo $donnees['Nom']; ?></p>
     <p>Prenom de l'élève: <?php echo $donnees['Prenom']; ?></p>
     <p>Sa classe: <?php echo $donnees['Classe']; ?></p>
 </div>
+
 <?php
         }
         $reponse->closeCursor();
@@ -31,5 +35,6 @@ catch (Exception $erreur)
     }
   
     ?>
+
 </div>
 </body>
