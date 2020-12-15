@@ -61,6 +61,6 @@ try
                ?>
                </select>
     </p>                
-	<p><input type="submit" /></p>        
+	<p><input type="submit" value="Envoyer"/></p>        
 </form>
 </div>

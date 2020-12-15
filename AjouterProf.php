@@ -51,6 +51,6 @@ try
 <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
     <p>Prenom: <input type="text" name="Prenom" /></p>
-    <p><input type="submit" /></p>        
+    <p><input type="submit" value="Envoyer"/></p>        
 </form>
 </div>
