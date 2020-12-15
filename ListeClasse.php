@@ -5,7 +5,6 @@ menu();
 <head>
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
 <?php
 try 
 {
@@ -14,9 +13,12 @@ try
   while ($donnees = $reponse->fetch())
   {          
 ?>
-<div>
-Nom de la classe: <?php echo "<p>".$donnees['Nom']."</p>"; ?>   
+
+<body>
+<div class=conteneur>
+<p>Nom de la classe: <?php echo $donnees['Nom']; ?></p>  
 </div>
+
 <?php
   }
   $reponse->closeCursor();

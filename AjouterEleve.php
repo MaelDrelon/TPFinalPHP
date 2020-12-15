@@ -46,6 +46,7 @@ try
 </head>
 
 <body>
+<div class=conteneur>
 <p>Entrez les valeurs de l'élève :</p>
  <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
@@ -62,3 +63,4 @@ try
     </p>                
 	<p><input type="submit" /></p>        
 </form>
+</div>

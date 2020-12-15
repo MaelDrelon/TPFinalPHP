@@ -14,9 +14,9 @@ try
 </head>
 
 <body>
-<div>
-  Nom du Professeur: <?php echo "<p>".$donnees['Nom']."</p>"; ?>
-  Prenom du Professeur: <?php echo "<p>".$donnees['Prenom']."</p>"; ?>
+<div class=conteneur>
+  <p>Nom du Professeur: <?php echo $donnees['Nom']; ?></p>
+  <p>Prenom du Professeur: <?php echo $donnees['Prenom']; ?></p>
 </div>
 <?php
         }

@@ -46,9 +46,11 @@ try
 </head>
 
 <body>
+<div class=conteneur>
 <p>Entrez les valeurs du Professeur :</p>
 <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
     <p>Prenom: <input type="text" name="Prenom" /></p>
     <p><input type="submit" /></p>        
 </form>
+</div>
