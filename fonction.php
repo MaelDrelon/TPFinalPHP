@@ -22,7 +22,6 @@
             <li><a href="AjouterClasse.php">Ajouter Classe</a></li>
           </ul>
         </li>
-        <li><a href="#">A propos</a></li>
       </ul>
     </nav>
   </p>

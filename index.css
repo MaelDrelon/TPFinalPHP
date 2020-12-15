@@ -1,5 +1,4 @@
 html {
-  /*Le Fond d'écran de la page en question et les dégradages*/
   height: 100%;
   width: 100%;
   margin: auto;
@@ -16,6 +15,8 @@ html {
   width: 67, 06vw;
   overflow: scroll;
 }
+
+
 
 * {
   margin: 0px;
@@ -91,5 +92,5 @@ nav>ul li:hover .sous {
 
 .conteneur {
   margin: 50px 20px;
-  height: 1500px;
 }
+

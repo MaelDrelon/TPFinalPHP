@@ -14,10 +14,10 @@ try
 </head>
 
 <body>
-    <p>
-    <p>Nom du Professeur: <?php echo $donnees['Nom']; ?></p>
-    <p>Prenom du Professeur: <?php echo $donnees['Prenom'] ?></p>
-    </p>
+<div>
+  Nom du Professeur: <?php echo "<p>".$donnees['Nom']."</p>"; ?>
+  Prenom du Professeur: <?php echo "<p>".$donnees['Prenom']."</p>"; ?>
+</div>
 <?php
         }
         $reponse->closeCursor();
