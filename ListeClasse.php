@@ -5,6 +5,7 @@ menu();
 <head>
   <link rel="stylesheet" href="index.css">
 </head>
+<div class=fond>
 <?php
 try 
 {
@@ -30,4 +31,6 @@ catch (Exception $erreur)
     }
   
     ?>
+</div>
+
 </body>

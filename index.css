@@ -91,3 +91,11 @@ nav>ul li:hover .sous {
 .conteneur {
   margin: 10px 20px;
 }
+
+.fond{
+float:left;
+margin-right: auto;
+width:16%;
+height:100%;
+background-color:#ffffff;
+}
