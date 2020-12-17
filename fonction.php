@@ -31,10 +31,10 @@ $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; cha
 <?php
     }
 
-    function delete($maBase){
+    /*function delete($maBase){
       if(isset($_POST['Reponse']) == "Oui") 
         {
-          if ((!empty($_POST['Nom']))
+          if ((!empty($_POST['Reponse']))
           {
             $del = $maBase->query();
           }
@@ -48,5 +48,5 @@ $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; cha
       <p><input type="submit" value="Envoyer"/></p>
       </form>
       <?php
-    }
+    }*/
 ?>
