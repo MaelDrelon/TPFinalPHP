@@ -1,4 +1,5 @@
 <?php
+$maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; charset=utf8','mael', '');
     function menu(){
 ?>
   <p>
@@ -22,9 +23,30 @@
             <li><a href="AjouterClasse.php">Ajouter Classe</a></li>
           </ul>
         </li>
+        <li><a href="Gestion.php">Gestion</a>
+        </li>
       </ul>
     </nav>
   </p>
 <?php
+    }
+
+    function delete($maBase){
+      if(isset($_POST['Reponse']) == "Oui") 
+        {
+          if ((!empty($_POST['Nom']))
+          {
+            $del = $maBase->query();
+          }
+        }
+        
+          
+      echo "Supprimer? Ecriver Oui";
+      ?>
+      <form action="" method="post">
+      <p>Nom: <input type="text" name="Reponse" /></p>
+      <p><input type="submit" value="Envoyer"/></p>
+      </form>
+      <?php
     }
 ?>
