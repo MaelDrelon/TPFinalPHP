@@ -15,7 +15,6 @@ function Insert($maBase,$req)
         {
             echo "<p style='color:#027C0D'>L’enregistrement est ajouté </p>";
         }
-       
     }
     catch(Exception $e)
     {
@@ -24,8 +23,7 @@ function Insert($maBase,$req)
     }  
 }
 try 
-    {
-        
+    {      
         if(isset($_POST['Nom'])) 
         {
             if ((!empty($_POST['Nom']))	&& (!empty($_POST['Prenom'])) && (!empty($_POST['Classe'])))
@@ -35,7 +33,6 @@ try
             }
         }
     } 
-
     catch (Exception $erreur)
     {
         die ('Erreur : '.$erreur ->getMessage());
@@ -47,6 +44,7 @@ try
 </head>
 
 <body>
+<div class=fond>
 <div class=conteneur>
 <p>Entrez les valeurs de l'élève :</p>
  <form action="" method="post">
@@ -66,3 +64,5 @@ try
     <p><input type="submit" value="Envoyer"/></p>        
 </form>
 </div>
+</div>
+</body>

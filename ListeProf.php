@@ -19,8 +19,10 @@ try
 
 <body>
 <div class=conteneur>
+  <hr width=100% noshade size=8>
   <p>Nom du Professeur: <?php echo $donnees['Nom']; ?></p>
   <p>Prenom du Professeur: <?php echo $donnees['Prenom']; ?></p>
+  <hr width=100% noshade size=8>
 </div>
 
 <?php
@@ -34,6 +36,6 @@ catch (Exception $erreur)
     }
   
     ?>
-    
+
 </div>
 </body>

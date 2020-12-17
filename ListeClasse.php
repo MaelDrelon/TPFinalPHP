@@ -19,7 +19,9 @@ try
 
 <body>
 <div class=conteneur>
-<p>Nom de la classe: <?php echo $donnees['Nom']; ?></p>  
+  <hr width=100% noshade size=8>
+  <p>Nom de la classe: <?php echo $donnees['Nom']; ?></p>  
+  <hr width=100% noshade size=8>
 </div>
 
 <?php
@@ -33,7 +35,7 @@ catch (Exception $erreur)
     }
   
     ?>
-    
+
 </div>
 
 </body>
