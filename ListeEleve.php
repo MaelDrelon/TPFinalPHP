@@ -23,7 +23,7 @@ try
     <p>Nom de l'élève: <?php echo $donnees['Nom']; ?></p>
     <p>Prenom de l'élève: <?php echo $donnees['Prenom']; ?></p>
     <p>Sa classe: <?php echo $donnees['Classe']; ?></p>
-    <p>Suprimer?</p>
+    <!--<p>Suprimer?</p>-->
     <hr width=100% noshade size=8>
 </div>
 
