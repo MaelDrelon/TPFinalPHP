@@ -9,10 +9,12 @@ menu();
 <div class=fond>
 
 <?php
+//Début d'affichage des professeurs stocké dans la BDD
 try 
 {
   $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; charset=utf8','mael', '');
   $reponse = $maBase->query('SELECT `Nom`,`Prenom` FROM `Prof`');
+  //Début boucle
   while ($donnees = $reponse->fetch())
 {           
 ?>
@@ -27,8 +29,10 @@ try
 
 <?php
         }
+        //Fin boucle
         $reponse->closeCursor();
     } 
+    //Fin d'affichage des professeurs
 
 catch (Exception $erreur)
     {

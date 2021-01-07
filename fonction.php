@@ -1,6 +1,7 @@
 <?php
 $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; charset=utf8','mael', '');
-    function menu(){
+//Début Menu Déroulant
+function menu(){
 ?>
   <p>
     <nav>
@@ -33,4 +34,5 @@ $maBase= new PDO('mysql:host=192.168.65.227; dbname=TPFinalPHPRabasteDrelon; cha
   </p>
 <?php
     }
+    //Fin Menu Déroulant
 ?>

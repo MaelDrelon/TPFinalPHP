@@ -22,17 +22,21 @@ function Insert($maBase,$req)
         die('<p style="color:#FF0000";>impossible d’ajouter cet enregistrement : vérifiez</p>');
     }  
 }
+//Début d'enregistrement des valeurs donnée dans le formulaire
 try 
     {      
         if(isset($_POST['Nom'])) 
         {
             if ((!empty($_POST['Nom']))	&& (!empty($_POST['Prenom'])) && (!empty($_POST['Classe'])))
             {
+                //Début INSERT
                 $req ="INSERT INTO `Eleves`( `Nom`, `Prenom`,`Classe`) VALUES('".$_POST['Nom']."','".$_POST['Prenom']."','".$_POST['Classe']."')";
                 Insert($maBase,$req);
+                //Fin INSERT
             }
         }
     } 
+//Fin d'enregistrement des valeurs
     catch (Exception $erreur)
     {
         die ('Erreur : '.$erreur ->getMessage());
@@ -46,6 +50,7 @@ try
 <body>
 <div class=fond>
 <div class=conteneur>
+<!-- Début du formulaire -->
 <p>Entrez les valeurs de l'élève :</p>
  <form action="" method="post">
     <p>Nom: <input type="text" name="Nom" /></p>
@@ -63,6 +68,7 @@ try
                </select></p>
     <p><input type="submit" value="Envoyer"/></p>        
 </form>
+<!-- Fin formulaire -->
 </div>
 </div>
 </body>
